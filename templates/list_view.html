@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Here is list of puppies</h1>
+    <table class="table table-striped-columns table-hover">
+        <thead>
+        <tr>
+            <th scope="col">First</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for pup in puppies %}
+            <tr>
+                <td>{{ pup }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
